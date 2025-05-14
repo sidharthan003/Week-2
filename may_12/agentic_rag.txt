@@ -1,0 +1,13 @@
+Agentic RAG (Retrieval-Augmented Generation with Agents) is an evolution of traditional RAG models that incorporates the concept of autonomous agents in the information retrieval and response generation process.
+
+In classic RAG systems, a language model retrieves relevant context documents from a vector database and uses them to generate responses. While effective, this approach is mostly static and linear.
+
+Agentic RAG introduces agents—autonomous, task-driven sub-processes that can reason, make decisions, and take iterative actions. These agents can plan multi-step strategies, refine queries based on intermediate outputs, and decide when to re-retrieve more data or ask clarifying questions.
+
+The key advantage of Agentic RAG is its adaptability. Instead of relying on one-shot retrieval, agents can loop through processes like asking sub-questions, verifying facts, summarizing, or even delegating tasks to other agents.
+
+This architecture enhances reliability and depth, especially in complex queries or research-heavy applications. Agentic RAG is more interactive, interpretable, and powerful in dynamic real-world use cases.
+
+It is particularly useful in autonomous research assistants, customer support bots, or AI tools that require deep domain understanding.
+
+In short, Agentic RAG merges LLMs, retrieval systems, and intelligent agents into a single powerful framework.

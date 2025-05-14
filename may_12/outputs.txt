@@ -1,0 +1,5 @@
+chromadb_store:
+PS E:\workout_programs\Internship\Week-2\may_12> python -u "e:\workout_programs\Internship\Week-2\may_12\chromadb_store.py"
+C:\Users\sidhu\.cache\chroma\onnx_models\all-MiniLM-L6-v2\onnx.tar.gz: 100%|██████████████████████████████████████████████| 79.3M/79.3M [00:11<00:00, 7.25MiB/s] 
+Stored Document: This is a test document for ChromaDB.
+
