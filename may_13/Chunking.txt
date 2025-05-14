@@ -1,0 +1,9 @@
+Chunking is the process of breaking down large texts into smaller, manageable pieces or "chunks." This technique is crucial in Natural Language Processing (NLP) when dealing with lengthy documents that exceed the input limit of language models or search systems. By dividing text into chunks, it becomes easier to analyze, summarize, or retrieve specific content efficiently.
+
+Each chunk typically contains a fixed number of words, sentences, or tokens. For example, text may be split every 200 words or every 3 sentences. This helps ensure that each piece of text remains coherent and understandable on its own. Chunking is often used in tasks such as semantic search, summarization, and RAG (Retrieval-Augmented Generation) pipelines.
+
+Chunking is also important when using vector databases, as each chunk can be converted into an embedding and indexed for similarity search. Without chunking, large documents may not be processed properly or may lead to context loss.
+
+The choice of chunk size depends on the use case and model limitations. Overlapping chunks are sometimes used to preserve context between sections. Libraries like LangChain and Haystack automate chunking as part of document ingestion workflows.
+
+In short, chunking is a foundational step in making large-scale text processing practical, efficient, and model-compatible.
