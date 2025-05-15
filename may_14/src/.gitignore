@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments (root only)
+​/venv/
+​/env/
+​/.venv/
+​/ENV/
+​/env.bak/
+​/venv.bak/
+
+# dotenv file (keep your API keys out of Git!)
+​/.env
+
+# ChromaDB on-disk index
+​/db/
+
+# IDEs and editors
+​.idea/
+​/.vscode/
+​*.swp
+​*.swo
+
+# OS-generated
+​.DS_Store
+​.DS_Store?
+​._*
+​.Spotlight-V100
+​.Trashes
+​ehthumbs.db
+​Thumbs.db

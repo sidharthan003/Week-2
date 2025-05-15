@@ -1,0 +1,5 @@
+chromadb
+pypdf2
+tiktoken
+click
+python-dotenv

@@ -1,0 +1,6 @@
+chromadb
+pypdf2
+tiktoken
+google-generativeai
+click
+python-dotenv
