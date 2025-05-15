@@ -1,0 +1,89 @@
+# ========================
+# Python Bytecode & Cache
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ================
+# C extensions
+# ================
+*.so
+
+# =========================
+# Distribution / Packaging
+# =========================
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================
+# Virtual Environment Folders
+# ============================
+autogen-env/
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ======================
+# Environment Variables
+# ======================
+.env
+
+# ==========================
+# ChromaDB On-Disk Store(s)
+# ==========================
+db/
+
+# =====================
+# Testing & Coverage
+# =====================
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# =========================
+# Jupyter Notebook Checkpoints
+# =========================
+.ipynb_checkpoints/
+
+# ============
+# Log files
+# ============
+*.log
+
+# ==================
+# IDEs & Editors
+# ==================
+.vscode/
+.idea/
+
+# ==============
+# macOS files
+# ==============
+.DS_Store
+
+# ===============
+# Windows files
+# ===============
+Thumbs.db
+ehthumbs.db
+
+# =================
+# Miscellaneous
+# =================
+*.swp
+*.swo
+*.bak
+*.tmp
