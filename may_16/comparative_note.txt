@@ -1,0 +1,85 @@
+Comparative Note: Single-Agent vs Multi-Agent RAG
+
+1. Overview
+---------------
+- Single-Agent RAG:
+  * A single language model (LLM) handles both retrieval and generation.
+  * Simplified pipeline: retrieve → augment context → generate.
+ 
+- Multi-Agent RAG:
+  * Multiple specialized agents collaborate (e.g., retriever agent, generator agent, planner agent).
+  * Modular pipeline: planning → targeted retrieval → specialized generation → coordination.
+
+2. Retrieval Process
+----------------------
+- Single-Agent:
+  * Uses one retriever integrated with the LLM.
+  * Retrieves broad, general context; may include noise.
+  * Limited retrieval depth and query refinement.
+
+- Multi-Agent:
+  * Dedicated retriever agent(s) for different knowledge sources.
+  * Can perform iterative, targeted retrieval based on planner prompts.
+  * Supports dynamic query refinement and multi-source fusion.
+
+3. Context Handling
+----------------------
+- Single-Agent:
+  * All retrieved documents concatenated into one prompt.
+  * Prone to context window limits and irrelevant information.
+
+- Multi-Agent:
+  * Planner agent selects and prioritizes contexts.
+  * Generator agent receives curated snippets, ensuring relevance.
+  * Better management of context window and hierarchical context assembly.
+
+4. Generation Pipeline
+------------------------
+- Single-Agent:
+  * LLM directly generates output from the augmented prompt.
+  * Simpler, but may struggle with complex, multi-step tasks.
+
+- Multi-Agent:
+  * Planner defines tasks and sub-tasks.
+  * Generator(s) specialize (e.g., summarizer, code writer, translator).
+  * Conductor agent orchestrates final assembly of outputs.
+
+5. Scalability & Performance
+------------------------------
+- Single-Agent:
+  * Easier to scale horizontally by replicating the pipeline.
+  * Limited by single-model throughput and context window.
+
+- Multi-Agent:
+  * Agents can be distributed, parallelized, and specialized.
+  * Better throughput for complex tasks but higher orchestration overhead.
+
+6. Complexity & Maintenance
+-----------------------------
+- Single-Agent:
+  * Lower development and maintenance overhead.
+  * Easier debugging and fewer components.
+
+- Multi-Agent:
+  * Increased system complexity and integration challenges.
+  * Requires robust inter-agent communication and error handling.
+
+7. Flexibility & Adaptability
+--------------------------------
+- Single-Agent:
+  * Quick to deploy for simple Q&A and summarization.
+  * Less flexible for workflows requiring diverse capabilities.
+
+- Multi-Agent:
+  * Highly adaptable to complex, domain-specific workflows.
+  * Can integrate new agents for emerging tasks without overhauling core.
+
+8. Use Cases
+-------------
+- Single-Agent Ideal For:
+  * Simple document Q&A and chatbots.
+  * Rapid prototyping and lightweight deployments.
+
+- Multi-Agent Ideal For:
+  * Complex pipelines (e.g., multi-lingual translation + analysis, code generation + testing).
+  * Domain-specialized systems with modular requirements.
